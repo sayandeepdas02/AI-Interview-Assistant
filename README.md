@@ -1,16 +1,46 @@
-# React + Vite
+# AI-Interview-Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-driven interview platform that allows interviewers to create sessions and share unique links with candidates. Candidates can upload resumes, get AI-generated personalized interview questions, answer them in real time with timers, and finally receive automated AI evaluation (score + summary). Interviewers can then view candidate responses and results in their dashboard.
 
-Currently, two official plugins are available:
+🎥 Demo Video:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
+👨‍🏫 For Interviewers
+Create new interview sessions with title + interviewer name.
+Generate a unique shareable session link for candidates.
+Monitor candidate participation.
+View candidate scores, summaries, and full Q&A transcripts.
+Search & sort candidates by name, email, or score.
 
-## React Compiler
+👩‍💻 For Candidates
+Join an interview session via a link.
+Upload resume (PDF/DOCX) → AI extracts details.
+Get AI-generated technical questions (Easy, Medium, Hard).
+Answer in a chat-like interface with timers.
+Receive an AI-generated evaluation (score out of 100 + summary).
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
+Frontend: React + Redux Toolkit + TailwindCSS State Persistence: redux-persist AI Integration: OpenAI GPT (gpt-4o-mini) Resume Parsing: PDF.js + Mammoth (for docx) Routing: React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Flow
+Interviewer logs in and creates a session. → Copy the generated session link.
+Candidate opens the session link. → Uploads resume (PDF/DOCX). → AI generates personalized questions. → Candidate answers with a timer. → AI evaluates answers → gives score + summary.
+Interviewer sees results in the dashboard with detailed Q&A.
+
+
+📊 Example Output
+Score: 78/100
+
+
+Summary: Candidate demonstrated strong problem-solving skills and good knowledge of system design. Minor gaps in optimization strategies.
+
+
+✅ Next Improvements
+Add Authentication (JWT / Clerk / Firebase)
+Store data in a real database (MongoDB / PostgreSQL)
+Export candidate reports as PDF
+Add video/audio interview support
+Deploy to Vercel/Netlify + Backend on Render
+👨‍💻 Author Sayandeep Das
