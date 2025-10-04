@@ -2,7 +2,7 @@
 
 An AI-driven interview platform that allows interviewers to create sessions and share unique links with candidates. Candidates can upload resumes, get AI-generated personalized interview questions, answer them in real time with timers, and finally receive automated AI evaluation (score + summary). Interviewers can then view candidate responses and results in their dashboard.
 
-🎥 Demo Video:
+🎥 Demo Video: https://youtu.be/vGx6y6AHI2Y
 
 🚀 Features
 👨‍🏫 For Interviewers
